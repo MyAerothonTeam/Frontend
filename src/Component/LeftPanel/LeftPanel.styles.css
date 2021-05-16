@@ -1,13 +1,12 @@
 .leftPanel{
     width: 20%;
-    height: 350px;
+    height: 100%;
     margin-left: 10px;
     font-family: 'Courier New', Courier, monospace;
     font-size:14px;
     font-weight: bolder;
     text-shadow: 1px 1px #888888;
     box-shadow: 2px 2px 2px 2px #888888;
-    margin: 2px;
 }
 
 .symptomsImage{
