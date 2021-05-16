@@ -2,7 +2,9 @@
   text-align: center;
 }
 .contentSection{
-  width:100%;
+  width:100vw;
+  height: 60vh;
   overflow:hidden;
   display: flex;
+  justify-content: space-around;
 }
