@@ -31,7 +31,7 @@ class App extends Component {
       {
         console.log("data checking", Object.values(this.state.data.statewise)[0].active)
         let count = 0
-        Object.values(this.state.data.statewise).map(element => count = count + element.active)
+        Object.values(this.state.data.statewise).map(element => count = count + parseInt(element.active))
         console.log("checking count =>",count)
         return (
           <BrowserRouter>  
@@ -39,7 +39,7 @@ class App extends Component {
               {/* <Link to={'/about'}><button onClick={() => console.log("about stmt")}>About</button></Link>
               <Link to={'/contact'}><button onClick={() => console.log("console stmt")}>Contact</button></Link> */}
               <Header />
-              <HeroSection />
+              <HeroSection data={count} />
              {
                count
              }
