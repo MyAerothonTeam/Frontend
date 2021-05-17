@@ -1,7 +1,8 @@
 import './LeftPanel.styles.css'
 import symptomsImage from '../../Images/symptom.png';
 
-const LeftPanel = () => {
+const LeftPanel = (props) => {
+    console.log(props.data)
     return(
     <div className="leftPanel">
         <img src={symptomsImage} className="symptomsImage" alt="Symptoms logo"/>

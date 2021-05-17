@@ -18,9 +18,9 @@ class App extends Component {
    
   }
   
- async componentDidMount(){
+ componentDidMount(){
     console.log("componentdidmount")
-    const data = await fetch('https://api.covid19india.org/data.json')
+    const data =  fetch('https://api.covid19india.org/data.json')
     .then(response => response.json())
     .then(data => this.setState( { data } ) )  //promise
 
@@ -44,7 +44,7 @@ class App extends Component {
                count
              }
               <div className="contentSection">
-                <LeftPanel />
+                <LeftPanel data={count} />
                 <MainContent />
                 <RightPanel />
               </div>
