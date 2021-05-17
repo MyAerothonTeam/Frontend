@@ -19,7 +19,7 @@ const Header = () => {
                     <a href="recovery" >Death rate/ Recovery rate</a>
             </div>
             <div className="pred">
-                <a href="#prediction">Prediction</a>
+                <a href="prediction">Prediction</a>
             </div>
          </div>    
          
